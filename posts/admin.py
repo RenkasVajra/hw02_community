@@ -3,7 +3,7 @@ from .models import Post, Group
 
 
 class GroupAdmin(admin.ModelAdmin):
-    list_display = ("pk", "title", "slug", "descriptions") 
+    list_display = ("pk", "title", "slug", "description") 
     search_fields = ("title",) 
     list_filter = ("title",) 
     empty_value_display = "-пусто-"
