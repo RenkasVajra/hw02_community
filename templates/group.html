@@ -1,5 +1,4 @@
-
-{% extends  "base.html" %}
+{% extends %}  {% "base.html" %}
 {% block title %} Записи сообщества {{ grout.title }} | base.html {% endlock %}
 {% block header %} Записи сообщества {{ group.title }} | base.html {% endblock %}
 {% block content %}
@@ -15,5 +14,5 @@
     <p>
         {{ post.text }}
     </p>
-{% endfor %}
+    {% endfor %}
 {% endblock %}
