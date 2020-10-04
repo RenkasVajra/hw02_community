@@ -1,7 +1,8 @@
 from django.db import models
 from django.contrib.auth import get_user_model
 
-
+# Простите, 2-й коммит на проверку я отправил рефлекторно -
+# чтобы посмотреть работает ли всё :D.Этот комм я удалю
 User = get_user_model()
 
 
