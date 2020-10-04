@@ -42,5 +42,7 @@ class Post(models.Model):
         blank=True, 
         null=True,
         )
+
+
     class Meta:
-        ordering = ['pub_date__date_published']
+        ordering = ['pub_date']
