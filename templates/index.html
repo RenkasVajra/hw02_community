@@ -4,8 +4,9 @@
 {% block content %}
 
   {% for post in posts %}
-    <h2>{% if post.group != None %}
-        Группа: {{ post.group }}, Автор: {{ post.author.get_full_name }}, Дата публикации: {{ post.pub_date|date:"d M Y" }}
+    <h2>
+      {% if post.group is not None %}
+        Группа: {{ post.group }} {% endif %}, Автор: {{ post.author.get_full_name }}, Дата публикации: {{ post.pub_date|date:"d M Y" }}
     </h2>
     <p>{{ post.text|linebreaksbr }}</p>
     {% if not forloop.last %}<hr>{% endif %}
